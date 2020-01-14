@@ -1,0 +1,132 @@
+
+Clone hyperledger/fabric-samples repo
+
+===> Cloning hyperledger/fabric-samples repo and checkout v1.4.4
+Cloning into 'fabric-samples'...
+remote: Enumerating objects: 4430, done.
+remote: Total 4430 (delta 0), reused 0 (delta 0), pack-reused 4430
+Receiving objects: 100% (4430/4430), 1.61 MiB | 211.00 KiB/s, done.
+Resolving deltas: 100% (2182/2182), done.
+Note: switching to 'v1.4.4'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at bc72f3e Remove Stalebot
+
+Pull Hyperledger Fabric binaries
+
+===> Downloading version 1.4.4 platform specific fabric binaries
+===> Downloading:  https://github.com/hyperledger/fabric/releases/download/v1.4.4/hyperledger-fabric-linux-amd64-1.4.4.tar.gz
+--2020-01-14 20:33:32--  https://github.com/hyperledger/fabric/releases/download/v1.4.4/hyperledger-fabric-linux-amd64-1.4.4.tar.gz
+Connecting to 127.0.0.1:8118... connected.
+Proxy request sent, awaiting response... 302 Found
+Location: https://github-production-release-asset-2e65be.s3.amazonaws.com/66573241/64d82b80-072e-11ea-9015-6a611a74ce59?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20200114%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200114T123332Z&X-Amz-Expires=300&X-Amz-Signature=b85b15037100f517999bed9cb99ecd9a0edd40b76d43beb4c3b49fa1404baf83&X-Amz-SignedHeaders=host&actor_id=0&response-content-disposition=attachment%3B%20filename%3Dhyperledger-fabric-linux-amd64-1.4.4.tar.gz&response-content-type=application%2Foctet-stream [following]
+--2020-01-14 20:33:32--  https://github-production-release-asset-2e65be.s3.amazonaws.com/66573241/64d82b80-072e-11ea-9015-6a611a74ce59?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20200114%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200114T123332Z&X-Amz-Expires=300&X-Amz-Signature=b85b15037100f517999bed9cb99ecd9a0edd40b76d43beb4c3b49fa1404baf83&X-Amz-SignedHeaders=host&actor_id=0&response-content-disposition=attachment%3B%20filename%3Dhyperledger-fabric-linux-amd64-1.4.4.tar.gz&response-content-type=application%2Foctet-stream
+Connecting to 127.0.0.1:8118... connected.
+Proxy request sent, awaiting response... 200 OK
+Length: 83482367 (80M) [application/octet-stream]
+Saving to: ‘hyperledger-fabric-linux-amd64-1.4.4.tar.gz’
+
+hyperledger-fabric-linux-amd 100%[============================================>]  79.61M   228KB/s    in 6m 29s  
+
+2020-01-14 20:40:02 (210 KB/s) - ‘hyperledger-fabric-linux-amd64-1.4.4.tar.gz’ saved [83482367/83482367]
+
+bin/
+bin/orderer
+bin/peer
+bin/configtxlator
+bin/discover
+bin/idemixgen
+bin/cryptogen
+bin/configtxgen
+config/
+config/orderer.yaml
+config/core.yaml
+config/configtx.yaml
+==> Done.
+===> Downloading version 1.4.4 platform specific fabric-ca-client binary
+===> Downloading:  https://github.com/hyperledger/fabric-ca/releases/download/v1.4.4/hyperledger-fabric-ca-linux-amd64-1.4.4.tar.gz
+--2020-01-14 20:40:04--  https://github.com/hyperledger/fabric-ca/releases/download/v1.4.4/hyperledger-fabric-ca-linux-amd64-1.4.4.tar.gz
+Connecting to 127.0.0.1:8118... connected.
+Proxy request sent, awaiting response... 302 Found
+Location: https://github-production-release-asset-2e65be.s3.amazonaws.com/79410323/e8326500-07a0-11ea-8b61-50ea1ffe9e52?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20200114%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200114T124005Z&X-Amz-Expires=300&X-Amz-Signature=326df5e799347c9c54ba5d063d4ac5a3a0a4920e0f62f4a4bc167843e8f25696&X-Amz-SignedHeaders=host&actor_id=0&response-content-disposition=attachment%3B%20filename%3Dhyperledger-fabric-ca-linux-amd64-1.4.4.tar.gz&response-content-type=application%2Foctet-stream [following]
+--2020-01-14 20:40:06--  https://github-production-release-asset-2e65be.s3.amazonaws.com/79410323/e8326500-07a0-11ea-8b61-50ea1ffe9e52?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20200114%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200114T124005Z&X-Amz-Expires=300&X-Amz-Signature=326df5e799347c9c54ba5d063d4ac5a3a0a4920e0f62f4a4bc167843e8f25696&X-Amz-SignedHeaders=host&actor_id=0&response-content-disposition=attachment%3B%20filename%3Dhyperledger-fabric-ca-linux-amd64-1.4.4.tar.gz&response-content-type=application%2Foctet-stream
+Connecting to 127.0.0.1:8118... connected.
+Proxy request sent, awaiting response... 200 OK
+Length: 10334501 (9.9M) [application/octet-stream]
+Saving to: ‘hyperledger-fabric-ca-linux-amd64-1.4.4.tar.gz’
+
+hyperledger-fabric-ca-linux- 100%[============================================>]   9.86M   221KB/s    in 47s     
+
+2020-01-14 20:40:54 (213 KB/s) - ‘hyperledger-fabric-ca-linux-amd64-1.4.4.tar.gz’ saved [10334501/10334501]
+
+bin/
+bin/fabric-ca-client
+==> Done.
+
+Pull Hyperledger Fabric docker images
+
+FABRIC_IMAGES: peer orderer ccenv tools javaenv
+===> Pulling fabric Images
+====> hyperledger/fabric-peer:1.4.4
+1.4.4: Pulling from hyperledger/fabric-peer
+b8f262c62ec6: Pull complete 
+9c2dad781fe8: Pull complete 
+7e48a048d895: Pull complete 
+4b5f2a9ec0f7: Pull complete 
+9332c2443003: Pull complete 
+f8823b03421b: Pull complete 
+Digest: sha256:92c2bef91e80f54f6d73a89b796eab1b616f372e2258431f17d50dd0c2ce316b
+Status: Downloaded newer image for hyperledger/fabric-peer:1.4.4
+docker.io/hyperledger/fabric-peer:1.4.4
+====> hyperledger/fabric-orderer:1.4.4
+1.4.4: Pulling from hyperledger/fabric-orderer
+b8f262c62ec6: Already exists 
+9c2dad781fe8: Already exists 
+7e48a048d895: Already exists 
+4b5f2a9ec0f7: Already exists 
+a38d313ebb74: Pull complete 
+391a02b02202: Pull complete 
+Digest: sha256:f7715923e2ca67cee526c21638d86b21480e179419e9d6c20078caabb241b20e
+Status: Downloaded newer image for hyperledger/fabric-orderer:1.4.4
+docker.io/hyperledger/fabric-orderer:1.4.4
+====> hyperledger/fabric-ccenv:1.4.4
+1.4.4: Pulling from hyperledger/fabric-ccenv
+7ddbc47eeb70: Pull complete 
+c1bbdc448b72: Pull complete 
+8c3b70e39044: Pull complete 
+45d437916d57: Pull complete 
+b5035666b1cd: Pull complete 
+94c898b5fdef: Downloading [============================>                      ]  66.15MB/116.3MB
+bee7bd3eb18f: Download complete 
+9dc56c5637b5: Retrying in 1 second 
+33954343759c: Download complete 
+09a5b37c7f4f: Downloading 
+947f6f3dd9ef: Waiting 
+d68f5147d7dd: Waiting 
+1.4.4: Pulling from hyperledger/fabric-ccenv
+7ddbc47eeb70: Downloading [===============================================>   ]  25.29MB/26.69MB
+c1bbdc448b72: Download complete 
+8c3b70e39044: Download complete 
+45d437916d57: Download complete 
+b5035666b1cd: Downloading  6.454MB
+94c898b5fdef: Download complete 
+bee7bd3eb18f: Download complete 
+9dc56c5637b5: Download complete 
+33954343759c: Download complete 
+09a5b37c7f4f: Downloading  8.051MB
+947f6f3dd9ef: Waiting 
+d68f5147d7dd: Waiting 
